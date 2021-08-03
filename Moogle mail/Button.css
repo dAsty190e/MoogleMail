@@ -1,0 +1,40 @@
+/* Button 1 */
+.click {
+    border-radius: 4px;
+    background-color: #2c273b;
+    border: 25 25 25 25;
+    border-color: rgb(159, 186, 190);
+    color: #818ea5;
+    text-align: center;
+    font-size: 20px;
+    padding: 50 50 50 50;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .click span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .click span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .click:hover span {
+    padding-right: 25px;
+  }
+  
+  .click:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

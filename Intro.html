@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // these are functions
+            // functions have names, parameters, bodies. and return things
+            function helloWorld(extra, thisIsAnotherParameter) {
+                //in the body
+                alert("Hello World " + extra + " - " + thisIsAnotherParameter);
+                //return null
+            }
+
+            function kissesKissesKisses() {
+                alert("Kisses Kisses Kisses")
+            }
+
+            function whoDoYOuLoveBtnClick() {
+                var person = document.getElementById("whoDoYouLove").value;
+                alert("you love " + person);
+                helloWorld("hahahah", person);
+            }
+        </script>
+        <title>HTML THINGS</title>
+    </head>
+    <body>
+        <!-- 
+            <element {attribute}="value">{content}</elementClose>
+         -->
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <p>Paragraph</p>
+        <div><p>Paragraph inside div</p></div>
+        <hr>
+        <section>This is the section</section>
+        <aside>This is aside</aside>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <ol>
+            <li onmouseover="">1</li>
+            <li>2</li>
+            <li>3</li>
+        </ol>
+        <!-- any attribupte with an on prefix is considered an event listener -->
+        <button onclick="helloWorld()" id="button1">This is a button</button>
+        <input onclick="kissesKissesKisses()" type="button" id="button2" value="this is an input">
+        <hr>
+        <label>Who do you love?</label>
+        <input id="whoDoYouLove" type="text" />
+        <button onclick="whoDoYOuLoveBtnClick()">Calculate</button>
+    </body>
+</html>
